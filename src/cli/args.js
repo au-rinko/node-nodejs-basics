@@ -1,5 +1,9 @@
+import { argv } from 'node:process';
+
 const parseArgs = () => {
-    // Write your code here 
+    argv.forEach((val, index) => {
+        console.log(`${index} is ${val}`);
+    });
 };
 
 parseArgs();
